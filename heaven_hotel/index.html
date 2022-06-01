@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heaven_Hotel</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Themily/themify-icons/themify-icons.css  ">
+</head>
+<body>
+    <div id="Link">
+        
+    </div>
+
+    <div id="message">
+        <div class="icon_message"><i class="ti-themify-favicon-alt"></i></div>
+    </div>
+    
+    <div id="Slider">
+        <div id="Slider_Logo">
+            <div id="Slider_heaven">HEAVEN</div>
+            <div id="Slider_hotel">Hotel</div> 
+        </div>
+        <ul id="Slider_Tabbar">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">
+                    Room & Suites
+                    <i class="ti-angle-down icon_v"></i>
+            </a>
+                <ul id="Slider_Subset_Tabbar">
+                    <li><a href="#">Single Room</a></li>
+                    <li><a href="#">Double Room</a></li>
+                    <li><a href="#">Family Room</a></li>
+                    <li><a href="#">Suite</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Dining & Bar</a></li>
+            <li><a href="#">Amenities</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contacts</a></li>
+        </ul>
+        <Button id="Slider_login">LOGIN</Button>
+    </div>
+
+    <figure id="Header">
+        <img id="img" src="./image/header2.jpg" onclick="change()" alt="" class="img_header">
+        <div class="background_insert">
+        
+        </div>
+        <div class="comment_image_header">
+            <figcaption><h3 class="Header_tittle_1">THE HEAVEN HOTEL</h3></figcaption>
+            <figcaption><h1 class="Header_tittle_2">WE'RE A QUIET PLACE TO STAY AT</h1></figcaption>
+        </div>
+        
+    </figure>
+
+    <!-- <div class="comment_image_header">
+        <h3 class="Header_tittle_1">THE HEAVEN HOTEL</h3>
+        <h1 class="Header_tittle_2">WE'RE A QUIET PLACE TO STAY AT</h1>
+    </div> -->
+
+    <!-- <div class="next_background_header">
+        <div class="next_left"><i class="fa-solid fa-angle-left"></i></div>
+        <div class="next_right"><i class="fa-solid fa-angle-right"></i></div>
+    </div> -->
+
+    <div id="BookNow">
+        <div class="BookNow_name">
+            <div class="BookNow_heaven">BOOK NOW</div>
+            <div class="BookNow_Online">BEST PRICE ONLINE</div>
+        </div>
+        <form class="BookNow_form">
+            <div class="BookNow_form1">
+                <div class="BookNow_write">CHECK-IN DATE *</div>
+                <input class="BookNow_input1" type="text">
+            </div>
+            <div class="BookNow_form2">
+                <div class="BookNow_write">CHECK-OUT DATE *</div>
+                <input class="BookNow_input1" type="text">
+            </div>
+            <div class="BookNow_form3">
+                <div class="BookNow_write">ADULTS</div>
+                <input class="BookNow_input2" type="number" min="1" max="30">
+            </div>
+            <div class="BookNow_form4">
+                <div class="BookNow_write">CHILDREN</div>
+                <input class="BookNow_input2" type="number" min="0" max="10">
+            </div>
+            
+            <button class="BookNow_check">CHECK AVAILABILITY</button>
+        </form>
+        
+    </div>
+
+    <div id="Infomation">
+        <div class="Infomation_image">
+
+        </div>
+        <div class="Infomation_max">
+            <div class="Infomation_ultittle">
+                The Ultimate Hotel for Both Leisure and Business Goers
+            </div>    
+            
+            <div class="Infomation_tittle">
+                WHO VISIT THE FINE CITY OF INDIANAPOLIS
+            </div>
+
+            <div class="Infomation_about">
+                The Heaven hotel, located in the very heart of Indianapolis is a welcoming retreat for either people traveling across the country or businessmen, visiting our Rustbelt state for some commercial affairs.<br>
+                <br>
+                Here, we always make sure that you will have any of your needs satisfied, be it a comfortable hotel room with a strong WiFi signal and a diligent room service, a dining and lounge zone or any additional amenities a traveller might want…<br>
+            </div>
+
+            <div class="Infomation_More">
+                <a href="#"><div class="More_too">More</div></a> 
+            </div>
+
+        </div>
+    </div>
+
+    <div id="Free">
+        <div class="Free_all">
+            <div class="icon_free"></i><i class="fa-solid fa-wifi"></i></div>
+            <div class="Free_write">
+                FREE WIFI
+            </div>
+            <div class="Free_about">
+                Because both businessmen and travelers need to access the Internet anywhere!
+            </div>
+        </div>
+        <div class="Free_all">
+            <div class="icon_free"><i class="fa-solid fa-key"></i></div>
+            <div class="Free_write">
+                ROOM SERVICE
+            </div>
+            <div class="Free_about">
+                Enjoy a full-blown room service, enhanced by an option to order food and beverages!
+            </div>
+        </div>
+        <div class="Free_all">
+            <div class="icon_free"><i class="fa-solid fa-square-parking"></i></div>
+            <div class="Free_write">
+                FREE PARKING LOTS
+            </div>
+            <div class="Free_about">
+                Book a suite and the parking lot will be yours, free of any additional charge!
+            </div>
+        </div>
+        <div class="Free_all">
+            <div class="icon_free"><i class="fa-solid fa-bell-concierge"></i></div>
+            <div class="Free_write">
+                EARLY CHECK-IN, LATE CHECK-OUT
+            </div>
+            <div class="Free_about">
+                More flexible than ever, made with our guests’ comfort and timing in mind…
+            </div>
+        </div>
+    </div>
+
+    <div id="DinningBar">
+        
+        <div class="DinningBar_max">   
+            <div class="DinningBar_tittle">
+                DINNING & BAR
+            </div>
+
+            <div class="DinningBar_ultittle">
+                Taste our trademark cocktails & enjoy a truly unique culinary experience… As the sun sets and the sky turns purple, we celebrate the violet hour and the end of the day before welcoming the start of the night.
+            </div> 
+
+            <div class="DinningBar_about">
+                <div class="DinningBar_eat">
+                    <div class="name_eat">
+                        Crumbed whiting
+                    </div>
+                    <div class="about_name_eat">
+                        Fresh local baby whiting fillets in a sesame and parsley crumb s/w chips salad lemon
+                    </div>
+                </div>
+                <div class="the_price">
+                    $25.00
+                </div>
+            </div>
+            <div class="interrupt">
+                --------------------------------------------------------------------------------------
+            </div>
+
+            <div class="DinningBar_about">
+                <div class="DinningBar_eat">
+                    <div class="name_eat">
+                        Chicken Parmagiana
+                    </div>
+                    <div class="about_name_eat">
+                        Chicken Surf & Turf $31 Char grilled garlic chicken breast fillet topped
+                    </div>
+                </div>
+                <div class="the_price">
+                    $20.00
+                </div>
+            </div>
+            <div class="interrupt">
+                --------------------------------------------------------------------------------------
+            </div>
+
+            <div class="DinningBar_about">
+                <div class="DinningBar_eat">
+                    <div class="name_eat">
+                        Gluten Free Surf & Turf
+                    </div>
+                    <div class="about_name_eat">
+                        Char grilled Scotch fillet 300gm topped with a garlic seafood sauce
+                    </div>
+                </div>
+                <div class="the_price">
+                    $18.00
+                </div>
+            </div>
+            <div class="interrupt">
+                --------------------------------------------------------------------------------------
+            </div>
+
+            <div class="DinningBar_about">
+                <div class="DinningBar_eat">
+                    <div class="name_eat">
+                        Asian noodle salad
+                    </div>
+                    <div class="about_name_eat">
+                        Julliene veggies & rice noodles with mint coriander & cashew nuts nestled
+                    </div>
+                </div>
+                <div class="the_price">
+                    $30.00
+                </div>
+            </div>
+            <div class="interrupt">
+                --------------------------------------------------------------------------------------
+            </div>
+
+            <div class="DinningBar_More">
+                <a href="#"><div class="DinningBar_More_too"> See More</div></a> 
+            </div>
+        </div>
+        <div class="DinningBar_image">
+
+        </div>
+    </div>
+
+    <div id="Location">
+        <div class="Location_hotel">
+            <div class="about_location">
+                <div class="name_location">
+                    HOTEL LOCATION
+                </div>
+                <div class="infomation_loaction">
+                    <div class="name_infomation_loaction">
+                        VIET NAM, HA NOI
+                    </div>
+                    <div class="about_infomation_location">
+                        Heaven hotel has a total ground area of 360,367 to 360,500m² with a total estimated investment capital of 23,883 billion.
+                    </div>
+                </div>
+                <div class="email_hotel">
+                    <p>Email:</p>
+                    <div class="name_email_hotel">HeavenHotel@gmail.com</div>
+                </div>
+                <div class="phone_hotel">
+                    <div class="area_code">
+                        + 84
+                    </div>
+                    <div class="phone_number">
+                        966 234 475
+                    </div>
+                </div>
+                <div class="about_free_phone">
+                    TOLL FREE PHONE NUMBER
+                </div>
+            </div>
+
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7449.912653262822!2d105.8635175233227!3d20.994387710702167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac1b32177d79%3A0xde093f29474d98c8!2zS2h1IMSRw7QgdGjhu4sgVGltZXMgQ2l0eSwgVsSpbmggVHV5LCBIYWkgQsOgIFRyxrBuZywgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1653507378019!5m2!1svi!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div id="GuestRewievs">
+        <div class="GuestRewievs_name">GUEST REWIEVS</div>
+        <div class="GuestRewievs_person">
+            <div class="About_person">
+                <div class="Maxim_live">
+                    <span>As a businessman, who travles all year long I can say that this hotel has everything that a man like me may need.</span>
+                </div>
+                <div class="successful_person">
+                    <div class="avatar">
+                        <img src="./image/dn1.jpg" alt="" class="avatar_dn" height="70px" width="70px">
+                    </div>
+                    <div class="infomation_person">
+                        <div class="name_person">Kurt Smith</div>
+                        <div class="Title_of_person">SATISFIED CUSTOMER</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="About_person">
+                <div class="Maxim_live">
+                    <Span>When i and my family were touring the Midwest last summer, we planned to stay in Indianapolis for a while.</Span>
+                </div>
+                <div class="successful_person">
+                    <div class="avatar">
+                        <img src="./image/dn2.jpg" alt="" class="avatar_dn" height="70px" width="70px">
+                    </div>
+                    <div class="infomation_person">
+                        <div class="name_person">Lyndon Johnson</div>
+                        <div class="Title_of_person">SATISFIED CUSTOMER</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="About_person">
+                <div class="Maxim_live">
+                    <span>I've been to a lot of Rustbelt's hotels in the last the few years and this one is definitely one of the best ones.</span> 
+                </div>
+                <div class="successful_person">
+                    <div class="avatar">
+                        <img src="./image/dn3.jpg" alt="" class="avatar_dn" height="70px" width="70px">
+                    </div>
+                    <div class="infomation_person">
+                        <div class="name_person">Eleonora Giovanardi</div>
+                        <div class="Title_of_person">SATISFIED CUSTOMER</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Mail">
+        <div class="Mail_header">
+            SIGN UP FOR A NEWSLETTER
+        </div>
+
+        <div class="Mail_about">
+            And never miss the Hotel's special offers and news!
+        </div>
+
+        <form action="" class="Mail_form">
+            <input type="email" value="ENTER YOUR E-MAIL" class="Mail_input">
+            <i class="fa-regular fa-envelope Mail_icon"></i>
+        </form>
+
+    </div>
+
+    <div id="Footer">
+        <div class="Footer_Logo">
+            <div class="Footer_heaven">HEAVEN</div>
+            <div class="Footer_hotel">Hotel</div>
+        </div>
+
+        <div class="Footer_Tabbar_Main">
+            <ul class="footer_Tabbar">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Room & Suites</a></li>
+                <li><a href="#">Dining & Bar</a></li>
+                <li><a href="#">Amenities</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </div>
+
+        <div class="Web_about">
+            <p>Heaven Hotel 2022 Design by
+            <div class="Name_designer">Thai</div></p>
+        </div>
+    </div>
+
+    <script src="index.js">
+
+    </script>
+</body>
+</html>

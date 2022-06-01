@@ -1,0 +1,689 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    /* line-height: 1; */
+    letter-spacing: 0px;
+    text-align: left;
+    color: #3b3d42;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+li {
+    list-style-type: none;
+}
+
+/*------------ message -------------*/
+#message{
+    border-radius: 50%;
+    bottom: 20px;
+    right: 20px;
+    z-index: 5;
+    height: 50px;
+    width: 50px;
+    color: #fff;
+    background-color: rgb(57, 188, 253);
+    box-shadow: 10px 10px 10px rgba(4, 4, 4, 0.4);
+    display: flex;
+    font-size: 24px;
+    position: fixed;
+}
+
+#message:hover{
+    height: 55px;
+    width: 55px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.icon_message{
+    margin: auto;
+}
+/* ----------------------------------------- */
+
+/*------------------ Slider ----------------------*/
+#Slider{
+    background-color: #fff;
+    display: flex;
+    height: 70px;
+}
+
+#Slider_Logo{
+    margin: 10px;
+    flex:2;
+    padding: 0 15px 15px 5px;
+}
+
+#Slider_heaven{
+    color: #000;
+    margin: auto;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#Slider_hotel{
+    margin-left:5%;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.footer_Tabbar,
+#Slider_Tabbar {
+    flex: 5.5;
+    display: flex;
+    margin: 10px;
+}
+
+/* .footer_Tabbar>li, */
+#Slider_Tabbar>li{
+    display: inline-block;
+    position: relative;
+    margin:  17px 16px 16px 16px;
+    height: 70px;
+}
+
+.footer_Tabbar li.active a,
+#Slider_Tabbar li.active a{
+    color: red;
+}
+
+.footer_Tabbar li a:hover,
+#Slider_Tabbar li a:hover{
+    color: red;
+    cursor: pointer;
+}
+
+#Slider_Subset_Tabbar{
+    display: none;
+    position: absolute;
+    z-index: 4;
+    top: 45px;
+    width: 200px;
+    transition: all 0.5 ease;
+}
+
+#Slider_Subset_Tabbar li{
+    line-height: 36px;
+    padding: 0 12px;
+}
+
+#Slider_Subset_Tabbar a{
+    color: #fff;
+}
+
+.footer_Tabbar li:hover #Slider_Subset_Tabbar,
+#Slider_Tabbar li:hover #Slider_Subset_Tabbar{
+    display: block;
+    background-color: rgb(154, 119, 97);
+    color: #fff;
+}
+
+
+.icon_v{
+   font-size: 10px;
+}
+
+#Slider_login{
+    flex: 1;
+    padding: 15px 5px;
+    background-color: #192d51;
+    color: #fff;
+    font-weight: 300;
+    border: none;
+    cursor: pointer ;
+    margin: 15px;
+}
+
+#Slider_login:hover{
+    background-color: rgb(145, 101, 68);
+}
+/* -------------------------------------------------------------- */
+
+/*---------------------------- Heeder ----------------------------*/
+#Header{
+    position: relative;
+    height: 600px;
+}
+
+.img_header{
+    height: 600px;
+    width: 100%;
+}
+
+.background_insert{
+    position: absolute;
+    z-index: 2;
+    bottom: 0px;
+    background-image: linear-gradient(0,rgba(88, 98, 114, 0.2), rgba(218, 141, 141, 0.2));
+    position: absolute;
+    height: 600px;
+    width: 100%;
+}
+
+/* -------------------------------------------------------------------*/
+
+/*------------------------------- Heeder -----------------------------*/
+.comment_image_header{
+    z-index: 2;
+    bottom: 130px;
+    left: 5px;
+    position: absolute;
+    color: #000;
+    width: 100%;
+}
+
+.Header_tittle_1{
+    color: #000;
+    margin: auto;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.Header_tittle_2{ 
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+/* -------------------------------------------------------------------*/
+
+/*------------------------------ BookNow ------------------------------*/
+#BookNow{
+    margin: 0 50px 0 50px;
+    background-color: #3b3d42;
+    height: 120px;
+    display: flex;
+    position: relative;
+    padding: 10px;
+    z-index: 3;
+    bottom: 60px;
+}
+
+.BookNow_name{
+    flex: 2;
+    padding:20px;
+    margin: auto;
+}
+
+.BookNow_heaven{
+    color: #fff;
+    margin: auto;
+    font-size: 24px;
+    font-weight: 300;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.BookNow_Online{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.BookNow_form{
+    flex: 6;
+    display: flex;
+    font-size: 12px;
+    color: #fff;
+}
+
+.BookNow_form1{
+    flex: 1,5;
+    margin: auto;
+}
+
+.BookNow_form2{
+    flex: 1,5;
+    margin: auto;
+}
+
+.BookNow_form3{
+    flex: 1;
+    margin: auto;
+}
+
+.BookNow_form4{
+    flex: 1,2;
+    margin: auto;
+}
+
+.BookNow_write{
+    margin-left: 5px;
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+.BookNow_input1{
+    padding: 5px;
+    margin: 5px;
+    width: 80%;
+}
+
+.BookNow_input2{
+    padding: 5px;
+    margin: 5px;
+    width: 80%;
+}
+
+.BookNow_check{
+    flex: 2;
+    background-color: #162541;
+    color: #fff;
+    padding: 10px;
+    border: 2px solid #162541;
+    font-weight: 700;
+    margin: 23px;
+}
+
+.BookNow_check:hover{
+    background-color: #3b3d42;
+    cursor: pointer;
+}
+/* ---------------------------------------------------------------------------------*/
+
+/*------------------------------- Infomation -------------------------------*/
+#Infomation{
+    display: flex;
+}
+
+.Infomation_image{
+    flex: 2.8;
+    background-image: url(./image/Roomate_View_Beach.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.Infomation_max{
+    flex: 3;
+    margin-left: 10%;
+    color: #616161;
+}
+
+.Infomation_ultittle{
+    font-size: 18px;
+
+}
+
+.Infomation_tittle{
+    color: #000;
+    margin-top: 15px;
+    font-size: 35px;
+}
+
+.Infomation_about{
+    margin-top:60px;
+}
+
+.DinningBar_More,
+.Infomation_More{
+    margin-top:35px;
+    display: flex;
+}
+
+.DinningBar_More_too,
+.More_too{
+    margin: auto;
+    color: #000;
+    padding: 5px 20px;
+    border: 2px solid #162541; 
+}
+
+.DinningBar_More_too:hover,
+.More_too:hover{
+    background-color: #162541;
+    color: #fff;
+}
+/* --------------------------------------------------------------------------*/
+
+/*------------------------------- Free -----------------------------------*/
+#Free{
+    display: flex;
+    height: 150px;
+    color: #fff;
+    margin-top: 50px;
+    background-color: #3b3d42;
+    margin-bottom: 30px;
+}
+
+.Free_all{
+    flex: 1;
+    margin: auto;
+}
+
+.icon_free{
+    text-align: center;
+    font-size: 30px;
+    color: #ff4157;
+    margin-bottom: 10px;
+}
+
+.Free_write{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.Free_about{
+    text-align: center;
+    margin: 0 15px;
+    font-size: 12px;
+}
+/* --------------------------------------------------------------------------*/
+
+/*------------------------------ Dinning&bar --------------------------------*/
+#DinningBar{
+    display: flex;
+    padding: 50px 10px;
+    background-color: #e5e5e5;
+}
+
+.DinningBar_max{
+    flex: 1;
+}
+
+.DinningBar_tittle{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.DinningBar_ultittle{
+    padding: 5px 0 25px 0;
+    font-size: 12px;
+}
+
+.DinningBar_about{
+    display: flex;
+}
+
+.DinningBar_eat{
+    flex: 5;
+}   
+
+.name_eat{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.about_name_eat{
+    padding: 10px 0 0 0;
+    font-size: 12px;
+}
+
+.the_price{
+    flex: 1;
+    padding: 20px 20px 0 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.interrupt{
+    font-size: 20px;
+    opacity: 0.5;
+    padding: 10px 0;
+}
+
+.DinningBar_More{
+    margin-top: 20px 0;
+}
+
+.DinningBar_More_too{
+   
+}
+
+.DinningBar_image{
+    flex: 1;
+    background-image: url(./image/mon-ngon.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 20px;
+}
+/* --------------------------------------------------------------------------*/
+
+/*------------------------------- Location ---------------------------------*/
+#Location{
+    margin: 40px 10px;
+}
+
+.Location_hotel{
+    display: flex;
+}
+
+.about_location{
+    flex: 1;
+}
+
+.name_location{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.infomation_loaction{
+    margin-left: 15%;
+    margin-top: 100px;
+}
+
+.name_infomation_loaction{
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.about_infomation_location{
+    font-size: 12px;
+    padding-bottom: 30px;
+}
+
+.email_hotel{
+    margin-left: 15%;
+    display: flex;
+    padding-bottom: 30px;
+}
+
+.email_hotel p{
+    padding-right: 5px;
+}
+
+.name_email_hotel{
+    color: #ff4157;
+}
+
+.phone_hotel{
+    display: flex;
+    color: #000;
+    font-weight: 500;
+    font-size: 24px;
+    margin-left: 15%;
+}
+
+.area_code{
+    padding-right: 10px;
+}
+
+.phone_number{
+
+}
+
+.about_free_phone{
+    margin-left: 15%;
+    font-size: 10px;
+    opacity: 0.4;
+}
+
+.map{
+    flex: 2;
+    padding: 0 0 0 30px;
+}
+/* --------------------------------------------------------------------------*/
+
+/*--------------------------------- GuestRewievs ----------------------------*/
+#GuestRewievs{
+    margin: 20px 0;
+    padding: 30px 0;
+    background-image: url(https://ld-wp73.template-help.com/monstroid2/skins/woods/wp-content/uploads/2020/02/bg_pic2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.GuestRewievs_name{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 20px;
+}
+
+.GuestRewievs_person{
+    display: flex;
+    justify-content: space-between;
+}
+
+.About_person{
+
+}
+
+.Maxim_live{
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.successful_person{
+    display: flex;
+    justify-content: center;
+}
+
+.avatar{
+    padding: 0 10px 10px 10px;
+}
+
+.avatar_dn{
+    border-radius: 50%;
+    
+}
+
+.infomation_person{
+    text-align: center;
+    padding: 20px;
+}
+
+.name_person{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.Title_of_person{
+    font-size: 10px;
+}
+/* --------------------------------------------------------------------------*/
+
+/*---------------------------------- Mail -----------------------------------*/
+#Mail{
+    background-color: #e5e5e5;
+}
+
+.Mail_header{
+    font-size: 24px;
+    padding-top: 50px;
+    text-align: center;
+    font-weight: 700;
+    padding: 30px 10px 10px 10px;
+}
+
+.Mail_about{
+    text-align: center;
+    font-size: 12px;
+    padding: 10px 10px 10px 30px;
+}
+
+.Mail_form{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.Mail_input{
+    width: 40%;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.Mail_icon{
+    padding: 10px;
+    font-size: 18px;
+}
+/* --------------------------------------------------------------------------*/
+
+/*------------------------------ Footer -------------------------------------*/
+#Footer{
+    background-color: #000;
+    color: #fff;
+}
+
+.Footer_Logo{
+   
+}
+
+.Footer_heaven{
+    font-size: 24px;
+    padding-top: 50px;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.Footer_hotel{
+    font-size: 12px;
+    text-align: center;
+    font-weight: 100;
+    opacity: 0.6;
+}
+
+.footer_Tabbar a{
+    color: #fff;
+}
+
+.footer_Tabbar_main{
+    display: flex;
+}
+
+.footer_Tabbar>li{
+    margin:  17px 16px 16px 16px;
+}
+
+.footer_Tabbar{
+   padding: 0 23%;
+}
+
+.Web_about{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.Name_designer{
+    color: #ff4157;
+    padding-left: 3px;
+}
+/* --------------------------------------------------------------------------*/
+
